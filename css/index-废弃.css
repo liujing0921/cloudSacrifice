@@ -1,0 +1,18 @@
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.banner {
+    margin-top: 75px;
+}
+
+.main {
+    height: 1000px;
+    background-color: pink;
+}

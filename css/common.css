@@ -1,0 +1,145 @@
+/* 导航 */
+
+.header {
+    background-color: #ffffff;
+}
+
+.nav-bar {
+    margin: 5px 0;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+
+.nav-bar ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 350px;
+    height: 36px;
+    border-radius: 18px;
+    padding-left: 20px;
+    border: 1px solid #7bd4c1;
+}
+
+.search button {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    width: 20%;
+    height: 36px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: #7bd4c1;
+    color: #fff;
+}
+
+.login-icon a {
+    display: block;
+    width: 36px;
+    height: 36px;
+}
+
+.login-icon a img {
+    width: 100%;
+}
+
+.navbar-alter {
+    background-color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    padding: 0;
+}
+
+.navbar-logo img {
+    height: 42px;
+}
+
+.nav-alter {
+    float: right;
+}
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #7bd4c1
+}
+
+@media screen and (max-width:850px) {
+    .navbar-logo img {
+        height: 40px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-alter {
+        float: none;
+    }
+    .navbar-default .navbar-nav>li:hover {
+        background-color: #7bd4c1;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav>li:hover a {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .navbar-nav li a::after {
+        position: absolute;
+        content: "";
+        bottom: 5px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all .3s;
+        background-color: #7bd4c1;
+    }
+    .navbar-nav li a:hover::after {
+        width: 100%;
+    }
+    .navbar-nav li:hover .submenu {
+        display: block;
+    }
+    .navbar-nav>li {
+        margin-left: 60px;
+    }
+    .navbar-nav>li:first-child {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-nav>li {
+        margin-left: 30px;
+    }
+}
+
+
+/* banner */
+
+.carousel-inner img {
+    width: 100%;
+}

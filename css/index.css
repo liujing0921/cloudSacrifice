@@ -1,0 +1,132 @@
+/* 登录 */
+
+.login {
+    display: none;
+}
+
+.bg {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+    opacity: 0.3;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    z-index: 100;
+}
+
+.login-dialog {
+    background-color: #fff;
+    left: 50%;
+    margin: -240px 0 0 -205px;
+    position: fixed;
+    top: 50%;
+    width: 420px;
+    z-index: 101;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-form-item .layui-icon {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.login-top .login-img,
+.login-top .logon-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.login-center input {
+    padding-left: 32px;
+}
+
+.login-top .login-img,
+.reg-box {
+    display: none;
+}
+
+.login-top .close {
+    width: 28px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    right: -37px;
+    cursor: pointer;
+}
+
+.login-center {
+    padding: 86px 55px 60px;
+}
+
+.login-center h1 {
+    padding-bottom: 43px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+.signup_item_content {
+    width: 100%;
+}
+
+.login_input {
+    height: 48px;
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 14px;
+    border: 1px solid #C9C9C9;
+    border-radius: 2px;
+}
+
+.signup_item_content_error {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #F15A5A;
+    visibility: hidden;
+    text-align: left;
+}
+
+.login_btn {
+    background: #07b1af;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 45px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.login_btn:hover {
+    background: #02c7c4;
+}
+
+.login_btn+p {
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+}
+
+
+/* main */
+
+.main {
+    height: 1000px;
+    background-color: rosybrown;
+}

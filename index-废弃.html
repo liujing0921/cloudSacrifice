@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云祭祀</title>
+    <!-- 网站说明 -->
+    <meta name="descripthion" content="云祭祀是全球网上纪念馆平台,专业从事清明网上祭祀,重阳网上祭奠,网上祭拜,中元节网上扫墓,寒衣节网上祭扫的公益性免费网站,祭祀文化网app可免费创建网上纪念馆、祭拜、献花、烧纸、摆放祭品等多种网络祭祀方式。" />
+    <!-- 关键字 -->
+    <meta name="keywords" content="网上纪念馆,网上祭祀,网上祭扫,网上祭奠,网上扫墓,网络祭祖,网上祭拜,祭祀文化网" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style src="js/index.js"></style>
+    <script src="js/common.js"></script>
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- 初始化样式 -->
+    <link href="css/base.css" rel="stylesheet">
+    <!-- 公共样式 -->
+    <link href="css/common1.css" rel="stylesheet">
+    <!-- login样式 -->
+    <link href="css/index-废弃.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="bg"></div>
+        <div class="login-dialog">
+            <div class="login-top">
+                <img class="close" src="images/close.png">
+            </div>
+            <div class="login-center">
+                <div class="login-center-title">
+                </div>
+                <div class="login-center-input">
+                    <h1>欢迎来到云祭祀</h1>
+                    <div class="signup_item">
+                        <div id="signup_item_content">
+                            <input type="text" class="login_input" id="user" value="" placeholder="输入用户名">
+                            <div class="signup_item_content_error" id="user_error">用户名最大长度为10字符</div>
+                        </div>
+                        <div id="signup_item_content">
+                            <input type="password" class="login_input" id="passwd" value="" placeholder="输入密码">
+                            <div class="signup_item_content_error" id="passwd_error">密码为最长6位长度的数字</div>
+                        </div>
+                        <div id="signup_item_content" style="margin-bottom: 50px;">
+                            <input type="submit" class="login_btn" value="登录" onclick="func(event)">
+                        </div>
+                    </div>
+                </div>
+                <div class="login-center-cheack"></div>
+                <div class="login-center-submit"></div>
+            </div>
+            <div class="login-bottom"></div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav class="navbar navbar-fixed-top navbar-default" id="header_nav">
+            <header class="row header">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">纪念馆</a></li>
+                            <li><a href="#">红色文化</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="search">
+                        <input type="search" name="" id="" placeholder="纪念馆编号/逝者姓名/建馆人/纪念馆标题">
+                        <button>搜索</button>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="login-icon">
+                        <a id="loginBtn" href="javascript:void(0)"><img src="images/login.png"></a>
+                    </div>
+                </div>
+            </header>
+        </nav>
+        <div id="myCarousel" class="carousel slide row banner">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#"><img src="images/banner2.png"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/banner3.jpeg"></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/banner4.jpeg"></a>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row main">
+
+        </div>
+    </div>
+    <script>
+        var header_nav = document.querySelector("#header_nav");
+        var banner = document.querySelector(".banner")
+        var b_hight = 0;
+        window.addEventListener('resize', function() {
+            b_hight = 15 + header_nav.clientHeight;
+            banner.style.marginTop = b_hight + "px";
+        });
+
+        function func(event) {
+            event.preventDefault();
+            //执行ajax动作
+        }
+    </script>
+</body>
+
+</html>

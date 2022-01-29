@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
+    src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+
+/* 登录开始 */
+
+body {
+    position: relative;
+}
+
+.login {
+    display: none;
+}
+
+.bg {
+    margin: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+    opacity: 0.3;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    z-index: 100;
+}
+
+.login-dialog {
+    background-color: #fff;
+    left: 50%;
+    margin: -160px 0 0 -205px;
+    position: fixed;
+    top: 50%;
+    width: 420px;
+    z-index: 101;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.login-top img {
+    width: 28px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    right: -37px;
+    cursor: pointer;
+}
+
+.login-center h1 {
+    padding: 30px 28px 43px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.signup_item {
+    margin: 0 55px;
+}
+
+.signup_item_content {
+    width: 100%;
+}
+
+.login_input {
+    height: 48px;
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 14px;
+    border: 1px solid #C9C9C9;
+    border-radius: 2px;
+}
+
+.signup_item_content_error {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #F15A5A;
+    visibility: hidden;
+    text-align: left;
+}
+
+.login_btn {
+    background: #2984EF;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 45px;
+    padding: 8px;
+}
+
+.login_btn:hover {
+    background: #549df2;
+}
+
+
+/* 登录结束 */
+
+
+/* 头部开始 */
+
+.navbar-default {
+    background-color: #ffffffee;
+    border-style: none;
+    z-index: 99;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+}
+
+.logo img {
+    /* logo图片不需要缩放 */
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.nav li {
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+
+.nav li:nth-child(-n+2) {
+    margin-right: 5%;
+}
+
+.nav li:hover {
+    color: #428cd5;
+    box-sizing: border-box;
+    height: 60px;
+    border-bottom: 3px solid #428cd5;
+}
+
+.nav li:hover a {
+    color: #428cd5;
+}
+
+.nav a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #000;
+}
+
+.search {
+    padding: 11px 0 13px;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    height: 36px;
+    border-radius: 18px;
+    padding-left: 20px;
+    border: 1px solid #428cd5;
+}
+
+.search button {
+    position: absolute;
+    right: 0px;
+    width: 20%;
+    height: 36px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: #428cd5;
+    color: #fff;
+}
+
+.login-icon a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 60px;
+    float: right;
+}
+
+.login-icon a img {
+    width: 100%;
+}
+
+
+/* 头部结束 */
